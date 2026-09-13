@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  .og { width: 1200px; height: 630px; display: grid; grid-template-columns: 1fr 440px; align-items: center; gap: 40px; padding: 0 80px;
+        background: radial-gradient(900px 500px at 90% 0%, #e1ebe3, transparent 70%), #f7f3ec; box-sizing: border-box; }
+  .og h1 { font-size: 92px; margin: 0 0 8px; }
+  .og .sub { font-family: var(--serif); font-size: 40px; color: var(--jade); margin: 0 0 28px; }
+  .og .line { font-size: 26px; color: var(--ink-soft); margin: 0 0 8px; }
+  .og .phone { margin-top: 30px; display: inline-block; background: var(--cinnabar); color: #fff; font-weight: 600; font-size: 28px; padding: 12px 28px; border-radius: 999px; }
+</style>
+</head>
+<body>
+<div class="og">
+  <div>
+    <span class="eyebrow" style="font-size:18px">Akupunkturní ordinace · Česká Lípa</span>
+    <h1>Akupunktura Wu Xing</h1>
+    <p class="sub">MUDr. Terezie Kubantová</p>
+    <p class="line">Akupunktura · Elektroakupunktura AC-TIVE ENF®</p>
+    <p class="line">Moxování · Baňkování · Čínské byliny</p>
+    <span class="phone">722 939 316 · wuxing.cz</span>
+  </div>
+  <div id="art"></div>
+</div>
+<script>
+  // Reuse the diagram from the homepage so the two never drift apart.
+  fetch('/').then(r => r.text()).then(html => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    document.body.prepend(doc.querySelector('svg[aria-hidden="true"]'));
+    document.getElementById('art').append(doc.querySelector('svg.wuxing'));
+    document.body.dataset.ready = '1';
+  });
+</script>
+</body>
+</html>
