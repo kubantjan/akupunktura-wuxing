@@ -21,8 +21,7 @@ Edit `index.html` directly (GitHub web editor is fine) — changes are live in ~
 
 - **Photo:** add `assets/terezie-kubantova.jpg` (portrait, ~800×1000) and
   uncomment the `<img>` in the `#o-mne` section (remove the `TK` monogram).
-- **Prices:** fill in the table in the `#cenik` section and delete its `hidden`
-  attribute; add `<a href="#cenik">Ceník</a>` to the nav.
+- **Prices:** the table in the `#cenik` section.
 - **Changing phone/address:** also update the JSON-LD block in `<head>`, `404.html`
   and `tools/og-image.html`, then regenerate the OG image.
 
