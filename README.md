@@ -70,6 +70,10 @@ folder structure, and overwrite the old files:
 
 ## Listings to update to wuxing.cz
 
+The practice moved to **Mariánská 540/25, 470 01 Česká Lípa** — every listing
+below still shows the old address (Mariánská 216/2, or even the Prague one),
+so update the address together with the web link.
+
 - [ ] Firmy.cz / Mapy.com (feeds Seznam search) — https://www.firmy.cz/detail/737700
 - [ ] Facebook page — https://www.facebook.com/akupunktura.wuxing/
 - [ ] Živéfirmy.cz — **still shows the old Prague address and 602 939 316** — https://www.zivefirmy.cz/akupunktura-wu-xing_f1168822
