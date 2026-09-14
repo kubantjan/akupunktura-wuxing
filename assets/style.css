@@ -138,7 +138,29 @@ p { margin: 0 0 1em; }
 .nav { display: flex; gap: 1.4rem; }
 .nav a { color: var(--ink-soft); text-decoration: none; font-size: .96rem; }
 .nav a:hover { color: var(--jade-deep); }
-@media (max-width: 880px) { .nav { display: none; } }
+@media (max-width: 880px) {
+  html { scroll-padding-top: 7.5rem; }
+  .site-header .wrap { flex-wrap: wrap; gap: .45rem 1rem; min-height: 0; padding-block: .6rem .55rem; }
+  .nav {
+    order: 3;
+    width: 100%;
+    gap: 1.6rem;
+    overflow-x: auto;
+    border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+    padding-top: .45rem;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { white-space: nowrap; font-size: .92rem; }
+}
+@media (max-width: 600px) {
+  .nav { justify-content: space-between; gap: 1rem; }
+  .nav .nav-extra { display: none; }
+}
+@media (max-width: 360px) {
+  .nav { gap: .6rem; }
+  .nav a { font-size: .84rem; }
+}
 
 /* ---------- Buttons ---------- */
 .btn {
