@@ -10,7 +10,8 @@ the root of `main`, on the custom domain `wuxing.cz` (see `CNAME`).
 |---|---|
 | `index.html` | The whole site (single page, Czech) |
 | `assets/style.css` | All styles; fonts are self-hosted in `assets/fonts/` (SIL OFL) — no Google requests, no cookies |
-| `404.html`, `robots.txt`, `sitemap.xml`, `favicon*`, `apple-touch-icon.png` | Pages plumbing |
+| `404.html`, `robots.txt`, `sitemap.xml`, `favicon*`, `apple-touch-icon.png` | Pages plumbing; `robots.txt` explicitly welcomes all crawlers incl. AI bots |
+| `llms.txt` | Plain-text summary of the practice for AI assistants — **keep in sync with `index.html`** (prices, address, contact) |
 | `assets/og-image.png` | Link-preview image (Facebook, WhatsApp…) — generated, see below |
 | `old-site-redirect/` | Files to upload over FTP to the old **wuxing.wz.cz** (replaces its pages with instant redirects to wuxing.cz) |
 | `tools/` | `og-image.html` + `render.cjs` to regenerate the OG image, PNG favicons and screenshots |
