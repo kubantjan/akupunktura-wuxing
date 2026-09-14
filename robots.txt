@@ -2,6 +2,11 @@
 User-agent: *
 Allow: /
 
+User-agent: SeznamBot
+User-agent: Googlebot
+User-agent: Bingbot
+Allow: /
+
 # Explicit welcome for AI crawlers (already covered by the rule above).
 User-agent: GPTBot
 User-agent: OAI-SearchBot
